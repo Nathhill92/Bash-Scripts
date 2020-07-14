@@ -1,13 +1,13 @@
 #!/bin/bash
 
-#   This script runs bash commands on other, given linux systems over ssh
+#   This script runs bash commands on other linux systems over ssh
 #
 #    USAGE: Enables commands to be run on multiple servers'
 #    "$0 [-f FILE_NAME] [-n] [-s] [-v] COMMAND"
 #
 #    f     -       File name for alternative server list
 #    n     -       Dry run. Shows commands without committing them
-#    s     -       Super user priveleges for commands ran on servers
+#    s     -       Super user privileges for commands ran on servers
 #    v     -       Verbose. Enables logging
 
 
