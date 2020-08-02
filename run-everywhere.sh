@@ -32,7 +32,7 @@ usage(){
     echo
     echo 'f     -       File name for alternative server list.'
     echo 'n     -       Dry run. Shows commands without committing them.'
-    echo 's     -       Super user priveleges for commands ran on servers.'
+    echo 's     -       Super user privileges for commands ran on servers.'
     echo 'v     -       Verbose. Enables logging.'
     echo
     exit 1
