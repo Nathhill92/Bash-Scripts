@@ -1,0 +1,18 @@
+Note: All files present in the directory should be given as file inputs to grep
+
+1) Match lines containing whole word: do
+	grep -w 'do' greeting.txt sample.txt words.txt
+
+2) Match whole lines containing the string: Hello World
+	grep -x 'Hello World' ./greeting.txt ./sample.txt ./words.txt
+
+3) Match lines containing these whole words:
+        Word1: He
+        Word2: far
+	
+	grep -wE 'He|far' ./greeting.txt ./sample.txt ./words.txt
+
+4) Match lines containing the whole word: you
+    and NOT containing the case insensitive string: How
+	
+	grep -w 'you' ./greeting.txt ./sample.txt ./words.txt | grep -vi 'How'

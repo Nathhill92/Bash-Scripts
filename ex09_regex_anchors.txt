@@ -1,0 +1,25 @@
+1) Match all lines starting with: no
+	grep '^no' *
+
+2) Match all lines ending with: it
+	grep 'it$' *
+
+3) Match all lines containing whole word: do
+	grep -w 'do' *
+
+4) Match all lines containing words starting with: do
+	grep '\b\do' *
+
+5) Match all lines containing words ending with: do
+	grep 'do\b' *
+
+6) Match all lines starting with: ^
+	grep '^\^' *
+
+7) Match all lines ending with: $
+	grep '\$$' *
+
+8) Match all lines containing the string: in
+    not surrounded by word boundaries, for ex: mint but not tin or ink
+	grep '\B\in\B' *
+

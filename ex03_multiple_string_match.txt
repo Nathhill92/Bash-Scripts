@@ -1,0 +1,29 @@
+1) Match lines containing either of these three strings
+        String1: Not
+        String2: he
+        String3: sun
+
+	grep -E "Not|he|sun" ./sample.txt
+
+2) Match lines containing both these strings
+        String1: He
+        String2: or
+
+	grep -E "He.*or|or.*He" ./sample.txt 
+
+3) Match lines containing either of these two strings
+        String1: a
+        String2: i
+   and contains this as well
+        String3: do
+
+	grep -E "a.*do|i.*do|do.*a|do.*i" ./sample.txt
+
+4) Match lines containing the string
+        String1: it
+   but not these strings
+        String2: No
+        String3: no
+
+	grep -E 'it' ./sample.txt | grep -Ev 'no|No'
+

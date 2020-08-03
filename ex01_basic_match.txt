@@ -1,0 +1,8 @@
+1) Match lines containing the string: day
+	grep "day" ./sample.txt 
+
+2) Match lines containing the string: it
+	grep "it" ./sample.txt 
+
+3) Match lines containing the string: do you
+	grep "do you" ./sample.txt 
