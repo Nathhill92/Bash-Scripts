@@ -40,14 +40,14 @@
         followed by min two and max four: o
         ending with character           : d
 
-	egrep 'g[o]{6}d' *
+	egrep 'g[o]{2,4}d' *
 
 8) Extract all strings from each line
         starting with character: d
         followed by max of two : o
         ending with character  : g
 
-	egrep 'g[o]{2,4}d' *
+	egrep 'g[o]{1,4}d' *
 
 9) Extract all strings from each line
         starting with character : g
